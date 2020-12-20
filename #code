@@ -1,0 +1,13 @@
+"""
+  Qusetion: a4b1c and a9b6c are five digit number. mod( a4b1c % 45 ) = 21 => mod( b9a6c % 45 ) = ?
+  Answer: 31 
+"""
+
+for i in range(1,10):
+  for j in range(10):
+    for k in range(10):
+      num=str(i)+"4"+str(j)+"1"+str(k)
+      
+      if int(num)%45==21:
+        num1=str(i)+"9"+str(j)+"6"+str(k)
+        print(int(num1)%45)
